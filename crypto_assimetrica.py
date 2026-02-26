@@ -72,7 +72,7 @@ def criptografar_mensagem(mensagem, caminho_chave_pub="chave_publica.pem"):
             )
         )
         print("\n[+] Mensagem Criptografada (em HEX para visualização):")
-        print(mensagem_criptografada.hex())
+        print(mensagem_criptografada.hex()) #como é que É? MAIS UMA?
         return mensagem_criptografada
     except ValueError as e:
         print(f"[!] Erro ao criptografar (a mensagem é muito grande?): {e}")
@@ -131,4 +131,5 @@ def menu():
             print("[!] Opção inválida.")
 
 menu()
+
 
